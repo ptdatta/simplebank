@@ -12,7 +12,7 @@ mysql:
 createdb:
 	docker exec -it go_postgres createdb --username=root --owner=root simple_bank
 
-dropdb:
+dropdb: 
 	docker exec -it go_postgres dropdb simple_bank
 
 migrateup:
